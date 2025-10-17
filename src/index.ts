@@ -91,10 +91,16 @@ function saveToCSV(items: QiitaItem[]): void {
 }
 
 
+function sortByPageViewsCount(items: QiitaItem[]): QiitaItem[] {
+  return items.sort((a, b) => b.page_views_count - a.page_views_count);
+}
+
+
 async function main() {
   const items = await fetchQiitaItems();
-  if (items) {
-    saveToCSV(items);
+  const sortedItems = sortByPageViewsCount(items);
+  if (sortedItems) {
+    saveToCSV(sortedItems);
     console.log("✅ CSVファイルに保存完了");
   } else {
     console.error("❌ 記事の取得に失敗しました");
