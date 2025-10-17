@@ -1,0 +1,30 @@
+{
+  "name": "qiita_api_primary",
+  "version": "1.0.0",
+  "description": "QiitaのAPIを使ってみる（初級編）",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yo16/qiita_api_primary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yo16/qiita_api_primary/issues"
+  },
+  "homepage": "https://github.com/yo16/qiita_api_primary#readme",
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3"
+  }
+}
